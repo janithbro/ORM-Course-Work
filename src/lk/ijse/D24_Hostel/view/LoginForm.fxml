@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" accessibleRole="IMAGE_VIEW" prefHeight="550.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.D24_Hostel.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="574.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/image/mountain5.jpg" />
+         </image></ImageView>
+      <TextField fx:id="txtUserName" layoutX="115.0" layoutY="212.0" onAction="#txtUserNameOnAction" prefHeight="25.0" prefWidth="147.0" promptText="           User name" styleClass="text" stylesheets="@../style/Style.css" />
+      <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="83.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icon/icons8-user-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="83.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icon/icons8-password-key-24.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="142.0" layoutY="292.0" onAction="#btnLogin" prefHeight="25.0" prefWidth="71.0" styleClass="loginButton" stylesheets="@../style/Style.css" text="Login">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="122.0" layoutY="343.0" text="Welcome" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="396.0" text="Don't you have a Account ?" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <JFXButton layoutX="144.0" layoutY="423.0" onAction="#btnSignUp" prefHeight="25.0" prefWidth="71.0" styleClass="loginButton" stylesheets="@../style/Style.css" text="Sign up">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <PasswordField fx:id="txtPassword" layoutX="115.0" layoutY="253.0" onAction="#txtPasswordOnAction" prefHeight="25.0" prefWidth="147.0" promptText="            Password" styleClass="text" stylesheets="@../style/Style.css" />
+      <ImageView fx:id="closeEye" fitHeight="17.0" fitWidth="17.0" layoutX="239.0" layoutY="257.0" onMouseClicked="#closeEyeOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icon/closeeye.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtPassword2" layoutX="115.0" layoutY="253.0" onAction="#txtPassword2OnAction" prefHeight="25.0" prefWidth="147.0" promptText="            Password" styleClass="text" stylesheets="@../style/Style.css" visible="false" />
+      <ImageView fx:id="openEye" fitHeight="17.0" fitWidth="17.0" layoutX="239.0" layoutY="256.0" onMouseClicked="#openEyeOnMouseClicked" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assests/icon/open_eye.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
