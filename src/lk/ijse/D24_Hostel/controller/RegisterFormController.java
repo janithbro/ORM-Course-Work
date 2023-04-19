@@ -76,15 +76,8 @@ public class RegisterFormController {
     }
 
     private void loadRoomIds() {
-//        RegistrationService registrationService = (RegistrationService) ServiceFactory.getService(ServiceTypes.RESERVATION);
-//        List<RoomDTO> roomDTOS = registrationService.loadRoomId();
 
         ObservableList<String> roomIds = FXCollections.observableArrayList();
-
-//        for (RoomDTO roomDTO : roomDTOS) {
-//            roomIds.add(roomDTO.getType());
-//        }
-//        cmbRoomType.getItems().setAll(roomIds);
 
         roomIds.add("Non-AC");
         roomIds.add("Non-AC/Food");
@@ -139,6 +132,7 @@ public class RegisterFormController {
         StudentDTO studentDTO = new StudentDTO(studentId, studentName, address, contact, dob, gender);
 
         //////////////////////////////////////////////////////////////////////////
+
         String roomType = (String) cmbRoomType.getValue();
         String roomId = lblRoomId.getText();
         double keyMoney = Double.parseDouble(lblKeyMoney.getText());

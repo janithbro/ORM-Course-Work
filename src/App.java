@@ -14,7 +14,7 @@ public class App extends Application{
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        URL resource = this.getClass().getResource("/lk/ijse/D24_Hostel/view/LoginForm.fxml");
+        URL resource = this.getClass().getResource("/lk/ijse/D24_Hostel/viewLoginForm.fxml");
         Parent window = FXMLLoader.load(resource);
         Scene scene = new Scene(window);
         primaryStage.setScene(scene);
